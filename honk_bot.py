@@ -44,7 +44,7 @@ class colors:
         cyan='\033[46m'
         lightgrey='\033[47m'
 
-file = open("/home/pi/Code/Python/honk_bot_token.txt")
+file = open("/home/pi/Code/Python/Discord-Bots/honk_bot_token.txt")
 token = file.readline()
 file.close()
 
@@ -116,7 +116,7 @@ async def honk(ctx):
         voice_channel = user.voice.channel
         vc = await voice_channel.connect()
         conBot("is Playing Honk")
-        vc.play(discord.FFmpegPCMAudio('/home/pi/Code/Python/honk.mp3'))
+        vc.play(discord.FFmpegPCMAudio('/home/pi/Code/Python/Discord-Bots/honk.mp3'))
         while vc.is_playing():
             sleep(3)
         conBot('disconected')
@@ -128,7 +128,7 @@ async def honk(ctx):
 
 @bot.command()
 async def gif(ctx):
-    await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Meme/GooseDance.gif'))
+    await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Discord-Bots/Meme/GooseDance.gif'))
     #print("Gif send to " + ctx.author.name)
     sleep(1)
 
@@ -137,35 +137,35 @@ async def meme(ctx):
 
     rand = random.randint(1, 8)
     if rand == 1:
-        await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Meme/Meme1.png'))
+        await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Discord-Bots/Meme/Meme1.png'))
         #print("Meme send to " + ctx.author.name)
         sleep(1)
     if rand == 2:
-        await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Meme/Meme2.png'))
+        await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Discord-Bots/Meme/Meme2.png'))
         #print("Meme send to " + ctx.author.name)
         sleep(1)
     if rand == 3:
-        await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Meme/Meme3.png'))
+        await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Discord-Bots/Meme/Meme3.png'))
         #print("Meme send to " + ctx.author.name)
         sleep(1)
     if rand == 4:
-        await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Meme/Meme4.png'))
+        await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Discord-Bots/Meme/Meme4.png'))
         #print("Meme send to " + ctx.author.name)
         sleep(1)
     if rand == 5:
-        await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Meme/Meme5.png'))
+        await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Discord-Bots/Meme/Meme5.png'))
         #print("Meme send to " + ctx.author.name)
         sleep(1)
     if rand == 6:
-        await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Meme/Meme6.png'))
+        await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Discord-Bots/Meme/Meme6.png'))
         #print("Meme send to " + ctx.author.name)
         sleep(1)
     if rand == 7:
-        await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Meme/Meme7.png'))
+        await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Discord-Bots/Meme/Meme7.png'))
         #print("Meme send to " + ctx.author.name)
         sleep(1)
     if rand == 8:
-        await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Meme/Meme8.png'))
+        await ctx.channel.send(file=discord.File('/home/pi/Code/Python/Discord-Bots/Meme/Meme8.png'))
         #print("Meme send to " + ctx.author.name)
         sleep(1)
 
